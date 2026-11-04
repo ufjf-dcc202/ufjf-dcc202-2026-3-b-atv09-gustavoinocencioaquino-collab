@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 05: Holy Grail</title>
+    <style>
+        header{
+            background-color: aquamarine;
+        }
+
+        footer{
+            background-color: pink;
+        }
+        section{
+            background-color: antiquewhite;
+        }
+        nav{
+            background-color: lightgreen;
+        }
+        aside{
+            background-color: cornsilk;
+        }
+
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            border: 1px solid blue;
+            background-color: lightblue;
+            padding: 0.1em;
+        }
+
+        .holy-grail{
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            grid-template-rows: auto 1fr auto;
+        }
+
+        .holy-grail > header{
+            grid-column: 1 / 4;
+        }
+        .holy-grail > footer{
+            grid-column: 1 / 4;
+        }
+        .holy-grail > section{
+            overflow: auto;
+        }
+    </style>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <main>
+        <article class="holy-grail">
+            <header>
+                <h1>Exemplo 05: Holy Grail</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>Primeiro</li>
+                    <li>Segundo</li>
+                    <li>Terceiro</li>
+                    <li>Quarto</li>
+                    <li>Quinto</li>
+                </ul>
+            </nav>
+            <section>
+                <h2>Texto</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque asperiores velit quia rem quasi optio, eos assumenda dicta quisquam repellat commodi dolor perferendis distinctio porro accusamus voluptates doloribus quis aliquid?</p>
+                <p>Doloremque facilis dolor iste, cupiditate aperiam odio iusto hic dolores beatae corrupti ea sunt consequatur rerum dignissimos voluptates possimus facere maxime asperiores! Ipsum, deleniti perspiciatis nemo quaerat repellat soluta dicta.</p>
+                <p>Corrupti quisquam aut officia eveniet dolorum atque nisi. Voluptas, impedit deserunt alias magni cupiditate, dolores optio libero mollitia inventore porro doloremque earum fuga quasi dolore dolor et reprehenderit recusandae expedita.</p>
+            </section>
+            <aside>
+                <ul>
+                    <li>Primeiro</li>
+                    <li>Segundo</li>
+                    <li>Terceiro</li>
+                    <li>Quarto</li>
+                    <li>Quinto</li>
+                </ul>
+            </aside>
+            <footer>
+                &copy; 2026 - DCC202 - UFJF
+            </footer>
+        </article>
+    </main>
+</body>
+</html>
